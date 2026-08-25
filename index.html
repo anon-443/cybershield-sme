@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CyberShield SME is an authorized passive domain-security posture assessment platform." />
+    <title>CyberShield SME | Project Showcase</title>
+    <style>
+      :root { --ink:#123d37; --signal:#16856f; --bright:#9de268; --mist:#f4f6f1; --line:#cfdbd4; --muted:#58736a; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:linear-gradient(180deg,#f8f9f5 0%,#eef4ef 100%); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      a { color:inherit; text-decoration:none; }
+      .shell { width:min(1160px,calc(100% - 2rem)); margin:0 auto; }
+      header { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.2rem 0; border-bottom:1px solid rgba(18,61,55,.15); }
+      .brand { display:flex; align-items:center; gap:.65rem; font-size:.9rem; font-weight:800; letter-spacing:.03em; text-transform:uppercase; }
+      .brand-mark { display:grid; place-items:center; width:32px; height:32px; border-radius:50%; color:#fff; background:var(--ink); font-size:1rem; }
+      .nav { display:flex; align-items:center; gap:.35rem; color:#426259; font-size:.85rem; font-weight:700; }
+      .nav a { padding:.55rem .7rem; border-radius:.5rem; }
+      .nav a:hover { background:#e2eee5; color:var(--ink); }
+      .nav .live { color:#fff; background:var(--signal); box-shadow:0 8px 18px rgba(22,133,111,.18); }
+      main { padding:4.5rem 0 0; }
+      .eyebrow { display:inline-flex; gap:.45rem; align-items:center; margin:0 0 1.1rem; color:#496c62; font-size:.72rem; font-weight:750; letter-spacing:.12em; text-transform:uppercase; }
+      .eyebrow i { display:block; width:8px; height:8px; border-radius:50%; background:var(--bright); box-shadow:0 0 0 4px rgba(157,226,104,.24); }
+      .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:3rem; align-items:center; padding:1rem 0 5rem; }
+      h1 { max-width:720px; margin:0; font-size:clamp(3.2rem,7vw,6.8rem); letter-spacing:-.075em; line-height:.88; }
+      .hero p { max-width:650px; margin:1.4rem 0 0; color:var(--muted); font-size:1.1rem; line-height:1.65; }
+      .actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.8rem; }
+      .button { display:inline-flex; align-items:center; gap:.55rem; min-height:48px; padding:0 1rem; border:1px solid var(--signal); border-radius:.55rem; color:#fff; background:var(--signal); font-size:.9rem; font-weight:800; box-shadow:0 10px 22px rgba(22,133,111,.18); }
+      .button.secondary { color:var(--ink); background:transparent; border-color:var(--line); box-shadow:none; }
+      .button:hover { transform:translateY(-2px); }
+      .visual { position:relative; display:grid; place-items:center; min-height:410px; overflow:hidden; border:1px solid rgba(18,61,55,.2); border-radius:1.2rem; background:radial-gradient(circle at 50% 50%,rgba(157,226,104,.22),transparent 12%),linear-gradient(145deg,#0b4b44,#123d37); box-shadow:0 22px 42px rgba(18,61,55,.16); }
+      .visual:before { position:absolute; inset:0; background:linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px); background-size:28px 28px; content:""; }
+      .radar { position:relative; z-index:1; width:min(52vw,255px); aspect-ratio:1; border:1px solid rgba(234,248,239,.32); border-radius:50%; background:radial-gradient(circle,rgba(157,226,104,.2),transparent 11%,transparent 43%,rgba(157,226,104,.09) 44%,transparent 45%,transparent 67%,rgba(157,226,104,.1) 68%,transparent 69%); }
+      .radar:before,.radar:after { position:absolute; border:1px solid rgba(234,248,239,.17); border-radius:50%; content:""; }.radar:before { inset:20%; }.radar:after { inset:37%; }
+      .core { position:absolute; top:50%; left:50%; display:grid; place-items:center; width:62px; height:62px; transform:translate(-50%,-50%); border-radius:50%; color:#0d463e; background:var(--bright); font-size:1.8rem; box-shadow:0 0 0 8px rgba(157,226,104,.1),0 0 32px rgba(157,226,104,.42); }
+      .caption { position:absolute; right:1.4rem; bottom:1.35rem; z-index:1; color:#d7ece2; font-size:.66rem; font-weight:750; letter-spacing:.09em; text-align:right; text-transform:uppercase; }
+      .notice { display:flex; gap:1rem; align-items:flex-start; margin:0 0 4.5rem; padding:1.15rem 1.25rem; border:1px solid #c6d8cd; border-radius:.75rem; color:#426259; background:#f9fbf7; line-height:1.55; }
+      .notice b { color:var(--ink); }
+      .features { padding:4rem 0; border-top:1px solid rgba(18,61,55,.15); }
+      .section-heading { display:flex; justify-content:space-between; gap:2rem; align-items:end; margin-bottom:2rem; }.section-heading h2 { max-width:650px; margin:0; font-size:clamp(2.3rem,4vw,4rem); letter-spacing:-.06em; line-height:.96; }.section-heading p { max-width:430px; margin:0; color:var(--muted); line-height:1.6; }
+      .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.8rem; }.card { min-height:210px; padding:1.35rem; border:1px solid var(--line); border-radius:.8rem; background:rgba(255,255,255,.58); }.card span { color:var(--signal); font-size:.75rem; font-weight:800; letter-spacing:.08em; }.card h3 { margin:.75rem 0 .55rem; font-size:1.25rem; letter-spacing:-.035em; }.card p { margin:0; color:var(--muted); font-size:.9rem; line-height:1.55; }
+      .workflow { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin:2rem 0 5rem; border-top:1px solid var(--line); border-left:1px solid var(--line); }.workflow div { padding:1.15rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }.workflow b { display:block; color:var(--signal); font-size:.8rem; }.workflow span { display:block; margin-top:.8rem; font-size:1.05rem; font-weight:800; }.workflow small { display:block; margin-top:.4rem; color:var(--muted); line-height:1.5; }
+      footer { display:flex; justify-content:space-between; gap:1rem; padding:1.4rem 0 2rem; border-top:1px solid rgba(18,61,55,.15); color:#5c746a; font-size:.78rem; }
+      @media (max-width:780px) { .hero { grid-template-columns:1fr; gap:2rem; padding-top:1.5rem; }.visual { min-height:330px; }.grid { grid-template-columns:1fr; }.workflow { grid-template-columns:1fr 1fr; }.section-heading,footer { flex-direction:column; align-items:flex-start; }.nav a:not(.live) { display:none; } }
+      @media (max-width:430px) { .shell { width:min(100% - 1.25rem,1160px); }.brand { font-size:.72rem; }.nav .live { padding:.5rem .65rem; }.workflow { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <a class="brand" href="#top"><span class="brand-mark">⌾</span>CyberShield SME</a>
+        <nav class="nav" aria-label="Showcase navigation"><a href="#features">Features</a><a href="#workflow">Workflow</a><a class="live" href="https://cybershld-hy4ob8q7.manus.space">Open live app ↗</a></nav>
+      </header>
+      <main id="top">
+        <section class="hero">
+          <div>
+            <p class="eyebrow"><i></i>Final Project Showcase</p>
+            <h1>Know your security posture</h1>
+            <p>CyberShield SME turns authorized, passive public-domain observations into transparent scores, practical remediation, and private historical reports for small and medium businesses.</p>
+            <div class="actions"><a class="button" href="https://cybershld-hy4ob8q7.manus.space">Launch the full application ↗</a><a class="button secondary" href="https://github.com/anon-443/cybershield-sme">View source repository ↗</a></div>
+          </div>
+          <div class="visual" aria-label="Cybersecurity assessment visual"><div class="radar"><div class="core">⌾</div></div><div class="caption">Authorized passive<br />assessment only</div></div>
+        </section>
+        <aside class="notice"><strong>Important</strong><span>This GitHub Pages site is a <b>static project showcase</b>. The working CyberShield application—including secure sign-in, live passive scans, AI guidance, private history, comparisons, and printable reports—runs at the live-application link above.</span></aside>
+        <section class="features" id="features"><div class="section-heading"><div><p class="eyebrow"><i></i>Core capabilities</p><h2>Useful evidence without intrusive testing</h2></div><p>Every assessment requires authorization, uses bounded public sources, and keeps reports private to the signed-in user.</p></div>
+          <div class="grid"><article class="card"><span>01 / WEBSITE</span><h3>Public web posture</h3><p>HTTPS and TLS context, security headers, observed cookie flags, robots visibility, and safe public metadata posture.</p></article><article class="card"><span>02 / EMAIL</span><h3>Domain email signals</h3><p>Public SPF, DMARC, MX, DNS, and optional owner-supplied DKIM selector checks.</p></article><article class="card"><span>03 / INTELLIGENCE</span><h3>Context that matters</h3><p>RDAP registration context, bounded certificate-transparency names, transparent weighted scores, and practical guidance.</p></article></div>
+        </section>
+        <section id="workflow"><div class="section-heading"><div><p class="eyebrow"><i></i>Assessment workflow</p><h2>A responsible, evidence-led workflow</h2></div></div><div class="workflow"><div><b>01</b><span>Authorize</span><small>The owner confirms permission before the assessment starts.</small></div><div><b>02</b><span>Observe</span><small>Bounded public HTTPS, DNS, RDAP, and certificate context is collected.</small></div><div><b>03</b><span>Score</span><small>Deterministic category weights produce a transparent A–F result.</small></div><div><b>04</b><span>Improve</span><small>Private reports, comparisons, trends, and plain-English remediation support action.</small></div></div></section>
+      </main>
+      <footer><span>CyberShield SME · Final Project</span><span>Authorized passive domain-security posture assessment</span></footer>
+    </div>
+  </body>
+</html>
