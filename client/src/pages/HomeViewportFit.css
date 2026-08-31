@@ -1,0 +1,84 @@
+@media (min-width: 980px) {
+  .observatory-page main > .observatory-hero {
+    display: flex !important;
+    box-sizing: border-box;
+    min-height: calc(100svh - 80px) !important;
+    align-items: center !important;
+    padding-block: clamp(1.25rem, 3vh, 2.5rem) !important;
+  }
+
+  .observatory-page main > .observatory-hero > .hero-row {
+    display: flex;
+    align-items: stretch;
+    gap: clamp(2rem, 3vw, 4rem);
+    width: 100%;
+  }
+
+  .observatory-page main > .observatory-hero > .hero-row > .signal-stage {
+    display: flex !important;
+    flex: 0 1 420px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+  }
+
+  .observatory-page main > .observatory-hero > .hero-row > .hero-side {
+    display: flex !important;
+    flex: 1 1 660px;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-self: stretch !important;
+    min-width: 0;
+    height: auto !important;
+  }
+
+  .observatory-page main .hero-row .hero-side > .hero-intro,
+  .observatory-page main .hero-row .hero-side > .assessment-console {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100%;
+    max-width: none;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .observatory-page main .hero-row .hero-side > .hero-intro { margin: 0 !important; }
+
+  body .observatory-page main .observatory-hero .hero-row .hero-side > .assessment-console {
+    display: block !important;
+    justify-content: flex-start !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 1.25rem 0 0 !important;
+  }
+
+  body .observatory-page main > .observatory-hero > .hero-row {
+    position: relative;
+    top: -24px;
+  }
+
+  body .observatory-page main > .observatory-hero > .hero-row > .signal-stage {
+    transform: translateY(8px) !important;
+  }
+}
+
+@keyframes radar-spin-centered {
+  from { transform: translateY(8px) rotate(0deg); }
+  to { transform: translateY(8px) rotate(360deg); }
+}
+
+.observatory-page .radar-sweep { transform: translateY(8px); transform-origin: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .observatory-page .radar-sweep { animation: radar-spin-centered 2.8s linear infinite !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .observatory-page .radar-sweep { animation: none !important; }
+}

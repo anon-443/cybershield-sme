@@ -1,0 +1,249 @@
+# Project TODO
+
+- [x] Define the authorized, passive-only assessment policy and surface it in the user interface, reports, and documentation.
+- [x] Create the scan data model for findings, category scores, reports, and user-owned scan history.
+- [x] Implement strict domain validation and normalization with safeguards for private, local, and disallowed targets.
+- [x] Implement safe HTTPS/TLS availability checks with timeouts and evidence capture.
+- [x] Implement passive security-header, cookie-flag, and robots.txt visibility checks.
+- [x] Implement SPF, DMARC, DNS, and basic domain-metadata checks with graceful third-party lookup failures.
+- [x] Implement transparent weighted category scoring and deterministic A–F overall grades.
+- [x] Add server-side AI-assisted plain-English explanations derived only from deterministic findings, with a non-verification disclaimer.
+- [x] Add protected database persistence so authenticated users can access only their own previous scan summaries and reports.
+- [x] Build a responsive landing page with domain entry, clear responsible-use notice, and professional cybersecurity visual design.
+- [x] Build scan-progress, interactive report, finding-detail, and remediation interfaces with robust loading, empty, and error states.
+- [x] Build a dashboard for personal scan history and a professional print-friendly report view.
+- [x] Add unit tests for validation, scoring, and safe-use guardrails.
+- [x] Write a complete GitHub README covering setup, environment variables, architecture, safe-use limits, and testing instructions.
+- [x] Save the final project checkpoint after responsive validation at desktop and mobile widths.
+- [x] Define user-owned scan comparison metrics and safe empty states when no prior scan exists.
+- [x] Add protected comparison data that contrasts a selected scan with the user’s immediately previous scan of the same domain.
+- [x] Build dashboard and report comparison insights for overall and category score changes, with evidence-led explanatory copy.
+- [x] Upgrade scan progress with detailed stages, real server status feedback, and graceful completion or error messaging.
+- [x] Adapt the supplied visual prompts into a project-appropriate mesh atmosphere, glass navigation, scroll progress, kinetic accents, and restrained interactive feature cards.
+- [x] Add automated server-progress tests and perform desktop/mobile visual validation for comparison baseline and active progress states.
+- [x] Drive the scan progress interface from user-owned server status updates instead of elapsed-time simulation.
+- [x] Add category-level comparison insight labels to dashboard rows while retaining the report’s detailed evidence-led comparison panel.
+- [x] Test authenticated scan-stream stage sequencing, completion, and error behavior without assessing an unauthorized external target.
+- [x] Visually validate the responsive dashboard and report comparison baseline/delta panels plus the active scan-progress state at desktop and mobile widths without inserting scan data.
+- [x] Add clearly labeled development-only comparison previews to support non-destructive visual QA when no authorized historical scans are available.
+- [x] Add and validate a development-only no-prior-scan baseline comparison preview for dashboard and report views.
+- [x] Make development-only comparison preview routes visibly render their panels without relying on an authenticated user session.
+- [x] Audit the approved proposal and current build to identify every implemented, partial, and missing capability.
+- [x] Review the supplied reference sites for layout, typography, interaction, and polish patterns appropriate to CyberShield.
+- [x] Replace the current public-page visual treatment with a distinctive premium cybersecurity art direction that is not derivative of the supplied sites.
+- [x] Rework typography, copy width, section rhythm, whitespace, and responsive sizing so content uses space intentionally and remains easy to read.
+- [x] Remove unnecessary copy punctuation and correct all visible wording, alignment, wrapping, and minor visual inconsistencies.
+- [x] Redesign the dashboard, assessment progress, and report interfaces to match the new coherent product system without removing current security features.
+- [x] Complete any proposal functionality that is currently partial or missing, documenting any intentionally deferred work.
+- [x] Verify the redesigned experience across public, dashboard, active-scan, report, comparison, desktop, and mobile states.
+- [x] Add code-verifiable coverage for DKIM selector validation, extended metadata defaults, and safe public-context findings.
+- [x] Confirm the expanded report context and comparison experience render correctly for both new and legacy saved-report structures.
+- [x] Add a report-view render-level legacy-metadata check and a non-destructive legacy context preview before release.
+- [x] Extract and test the report public-context panel with legacy report metadata using server-side component rendering.
+- [x] Record precise implementation and deferral status for every approved proposal feature in the project documentation.
+- [x] Review the supplied creative reference brief and attached layout screenshot for transferable composition principles without copying its visuals or palette.
+- [x] Replace all italic, script, and dark-blue public-page styling with a simple cyber-appropriate font and refined neutral-plus-signal palette.
+- [x] Recompose the hero with the visual on the left, the assessment console on the right, and no oversized empty space above the main content.
+- [x] Tighten public-page copy, line lengths, punctuation, section spacing, and responsive formatting for a clean professional reading rhythm.
+- [x] Verify the revised landing presentation at desktop and mobile widths, then checkpoint the change.
+- [x] Save the verified compact hero, neutral palette, and responsive formatting refinements as a release checkpoint.
+- [x] Move the desktop radar visual upward so it aligns with the compact hero composition.
+- [x] Fit the complete assessment console within the first desktop viewport by reducing unneeded hero height and vertical spacing.
+- [x] Increase the desktop scale and readability of the proof rail and coverage section heading.
+- [x] Expand the coverage description and other narrow desktop copy blocks to use available horizontal space with clean one-line reading where appropriate.
+- [x] Verify the screenshot-requested refinements at desktop and mobile widths, then checkpoint the update.
+- [x] Save the verified hero, assessment-console, proof-rail, coverage, and copy-width refinements as a release checkpoint.
+- [x] Increase undersized public-page typography across navigation, labels, descriptions, proof rail, and coverage cards.
+- [x] Reduce desktop hero height and vertical offsets so the complete assessment console appears within the initial screen at the user’s viewport.
+- [x] Remove the large empty coverage-space gap by vertically tightening and aligning the heading, description, and cards.
+- [x] Verify the final text-scale and layout corrections on desktop and mobile, then checkpoint the change.
+- [x] Save the verified final text-scale, hero-height, and coverage-spacing corrections as a release checkpoint.
+- [x] Shorten the desktop hero content and move the assessment console directly beneath it without a large blank gap.
+- [x] Compact the desktop green radar panel while retaining the cyber visual hierarchy.
+- [x] Remove the highlighted hero description line from the public landing page.
+- [x] Increase the lower safe-design shield graphic at desktop and mobile sizes.
+- [x] Verify the compact hero and enlarged safety visual at desktop and mobile widths, then checkpoint the change.
+- [x] Save the verified compact hero, radar, copy-removal, and enlarged safety-visual refinements as a release checkpoint.
+- [x] Remove the hero checkmark status-label row.
+- [x] Move the authorized passive-assessment indicator into the header area.
+- [x] Raise the desktop assessment console after the hero status-row removal for a tighter first-screen composition.
+- [x] Verify the final header and hero cleanup at desktop and mobile widths, then checkpoint the change.
+- [x] Save the verified header authorization status, simplified hero, and raised assessment console as a release checkpoint.
+- [x] Remove the header authorization status label.
+- [x] Raise the complete desktop assessment console further toward the headline without overlap.
+- [x] Resize the green radar visual so the full panel fits cleanly in the first desktop screen.
+- [x] Increase smaller public-page text in the proof rail and method section for clearer desktop reading.
+- [x] Verify the final first-screen and text-scale refinements at desktop and mobile widths, then checkpoint the change.
+- [x] Save the verified first-screen, radar-size, raised assessment-console, and enlarged supporting-text refinements as a release checkpoint.
+- [x] Increase header navigation prominence with larger type, stronger contrast, clearer spacing, and an intentional interaction treatment.
+- [x] Verify the enhanced navigation at desktop and mobile widths, then checkpoint the change.
+- [x] Save the verified prominent navigation refinement as a release checkpoint.
+- [x] Lower the hero action controls slightly without changing the assessment-console position.
+- [x] Add a clear active-section indicator to the desktop header navigation.
+- [x] Implement an accessible compact mobile navigation drawer with smooth open and close behavior.
+- [x] Add keyboard shortcut hints and functional shortcuts for dashboard navigation.
+- [x] Add unit coverage for dashboard shortcut routing and input-field safeguards.
+- [x] Audit each approved proposal requirement against the implemented application and document any incomplete or intentionally deferred scope.
+- [x] Verify the navigation, hero actions, mobile drawer, and dashboard shortcuts at desktop and mobile widths, then checkpoint the change.
+- [x] Add Escape-key dismissal, focus return, and a smooth close transition for the mobile navigation drawer.
+- [x] Save the verified active navigation, accessible mobile drawer, lowered hero actions, and dashboard shortcut enhancements as a release checkpoint.
+- [x] Center the compact mobile header navigation group while preserving its drawer behavior.
+- [x] Remove the unwanted circular artifact below the assessment-card lower-left edge without moving the assessment panel.
+- [x] Verify the refined mobile header and assessment card at the target desktop and mobile widths.
+- [x] Verify the opened mobile drawer at the target viewport and confirm the centered navigation treatment.
+- [x] Capture render-level evidence that the assessment-card lower-left edge remains clean after the targeted artifact removal.
+- [x] Save the verified centered navigation and clean assessment-card edge as a release checkpoint.
+- [x] Return desktop header navigation to the right corner rather than the centered position.
+- [x] Make the unauthenticated Sign in control visually prominent while retaining clear keyboard focus and responsive behavior.
+- [x] Verify the revised desktop and mobile header treatment at the supplied reference width and a compact mobile width.
+- [x] Save the verified corner-aligned navigation and prominent Sign in treatment as a release checkpoint.
+- [x] Re-audit all approved project requirements and identify any implemented, deferred, or submission-only work.
+- [x] Write a submission-ready 2–3 page report covering the problem, approach, implementation, results, safety constraints, and final status.
+- [x] Create a new private GitHub repository and push the current documented CyberShield codebase.
+- [x] Verify the report and private repository deliverables, then provide the final requirements and submission-status summary.
+- [x] Create a comprehensive live-site testing checklist covering every implemented CyberShield feature and expected outcome.
+- [x] Assess GitHub Pages compatibility for the CyberShield full-stack application and choose a safe publishing approach.
+- [x] Create a GitHub Pages static project showcase that clearly links to the full hosted application rather than misrepresenting unavailable backend features.
+- [x] Enable GitHub Pages from the `gh-pages` branch, verify the public showcase, and document the distinction between the static showcase and the full-stack application.
+- [x] Rework the static GitHub Pages showcase so its composition, typography, hero, navigation, assessment console, proof rail, and coverage layout closely match the CyberShield landing page.
+- [x] Republish and visually verify the GitHub Pages showcase after the landing-page visual match is applied.
+- [x] Audit the live CyberShield landing markup, final CSS, typography, dimensions, and static interaction states for high-fidelity GitHub Pages mirroring.
+- [x] Replace the GitHub Pages showcase with a high-fidelity static mirror of the CyberShield landing page, including matching formatting, spacing, sizing, and responsive behavior.
+- [x] Publish and compare the static mirror with the live landing page at desktop and mobile sizes.
+- [x] Capture and inspect the public GitHub Pages mirror at desktop and mobile dimensions, confirming the header, hero, assessment console, proof rail, coverage cards, and boundary section.
+- [x] Add reduced-motion-aware smooth scrolling to GitHub Pages navigation links and assessment calls to action.
+- [x] Add smooth hover and keyboard-focus feedback to GitHub Pages coverage cards and interactive buttons without reducing readability.
+- [x] Publish and verify the GitHub Pages motion and interaction refinements.
+- [x] Increase authenticated dashboard and report text contrast, font weight, and label readability without changing the public landing page.
+- [x] Strengthen report panels, score cards, comparison blocks, sidebar navigation, and print-action hierarchy for easier scanning.
+- [x] Verify the revised authenticated workspace at desktop and mobile widths.
+- [x] Inspect the captured report and dashboard views for readable contrast, font weight, panel hierarchy, sidebar treatment, and print-action visibility.
+- [x] Save the verified authenticated workspace readability refinement as a release checkpoint.
+- [x] Audit the downloaded PDF report for complete content, readable layout, and expected print output.
+- [x] Reduce unnecessary desktop sidebar space while preserving clear authenticated navigation, user identity, and keyboard shortcuts.
+- [x] Verify the adjusted report view and exported PDF at desktop and mobile sizes.
+- [x] Inspect the exported PDF pages for readable typography, spacing, pagination, report summary, score cards, AI guide, evidence ledger, and scope notes.
+- [x] Capture and inspect an authenticated saved-report route after sidebar compaction to confirm its reading space, icon navigation, user cue, and report focus.
+- [x] Save the verified PDF audit and compact report-reading layout as a release checkpoint.
+- [x] Add a persistent dark-mode toggle to the compact saved-report icon rail and expose it clearly on mobile.
+- [x] Add a Share Report action beside Print / Save PDF that opens a user-controlled native sharing or email/link workflow without publishing private reports.
+- [x] Verify the report theme and share controls at desktop and mobile sizes.
+- [x] Save the verified report theme and private sharing controls as a release checkpoint.
+- [x] Interact with the low-light report theme at desktop and mobile sizes and confirm the report-only dark treatment remains readable.
+- [x] Add focused coverage for the native share and private-link clipboard fallback outcomes, then exercise the sharing action with controlled adapters.
+- [x] Increase contrast and type scale for all authenticated report labels, severity/filter chips, findings, guidance text, context cards, and scope/interpretation notes.
+- [x] Verify no faint text remains in the report at desktop and mobile widths, including lower-page findings and footnotes.
+- [x] Save the verified comprehensive report-readability refinement as a release checkpoint.
+- [x] Directly inspect the current desktop render after the comprehensive contrast pass, including guidance cards, findings, severity chips, context labels, and final footnotes.
+- [x] Audit the supplied exported report and extracted result text for score, grade, finding, and scope consistency.
+- [x] Distinguish a completed certificate-transparency lookup with zero names from an unavailable lookup in the report context and evidence copy.
+- [x] Add focused test coverage for certificate-transparency completed-zero versus unavailable wording.
+- [x] Verify the clarified report context at desktop and mobile widths, then save the release checkpoint.
+- [x] Add a clearly labeled Evidence Ledger export/download control that uses the existing print-to-PDF report output without exposing reports publicly.
+- [x] Add a prominent warning treatment to the Git metadata evidence row only when the saved finding confirms exposure.
+- [x] Add a saved-report rerun action that pre-fills the domain while requiring a fresh user authorization confirmation before a passive scan begins.
+- [x] Add focused tests and validate the new report actions at desktop and mobile widths before saving the release checkpoint.
+- [x] Review the supplied animation references and identify original interaction patterns appropriate for CyberShield.
+- [x] Add accessible, performance-conscious motion refinements without reducing report or landing-page readability.
+- [x] Verify the motion upgrade at desktop and mobile widths, including reduced-motion behavior, then save the release checkpoint.
+- [x] Add concise detailed scanning-metric tooltips to the animated website, email, and domain coverage cards.
+- [x] Ensure coverage-card tooltips work by hover and keyboard focus while remaining usable on mobile and with reduced motion.
+- [x] Add focused tests, verify tooltip layout at desktop and mobile widths, then save the release checkpoint.
+- [x] Make landing-page animation visibly noticeable while retaining reduced-motion support and avoiding disruptive effects.
+- [x] Add a persistent site-wide dark mode control that covers landing, dashboard, and saved-report views.
+- [x] Enhance Evidence Ledger filtering so users can narrow findings by category, status, severity, and text search.
+- [x] Make dashboard current-versus-previous scan comparison easier to access and understand.
+- [x] Add focused tests and verify animation, dark mode, filtering, and dashboard comparison controls at desktop and mobile widths before release.
+- [x] Add a visible, accessible cybersecurity animation directly to the Assess a public domain console without obscuring any inputs or consent controls.
+- [x] Add focused coverage and verify the interactive assessment-console animation at desktop and mobile widths, including reduced-motion behavior, then save the release checkpoint.
+- [x] Restore the complete Run secure assessment button within the initial desktop assessment-console view without removing authorization controls.
+- [x] Add an original lightweight particle-reveal layer to the first-page assessment console that never obscures form content.
+- [x] Add focused coverage and verify the refined console and particle effect at desktop and mobile widths, including reduced-motion behavior, then save the release checkpoint.
+- [x] Move the complete assessment console upward so it fits within the user’s first desktop viewport without reducing the form’s usability.
+- [x] Add a smooth scanning spinner and transition state to the Run secure assessment action.
+- [x] Add a persistent landing-page control that lets users disable or enable decorative particle motion manually.
+- [x] Add a hover color transition and explanatory tooltip to the Run secure assessment action.
+- [x] Add focused tests and verify the refined console composition and controls at desktop and mobile widths before release.
+- [x] Position the full desktop assessment console at the lower alignment shown in the supplied reference while retaining first-screen visibility.
+- [x] Verify the requested console alignment at the supplied wide viewport and mobile width, then save the release checkpoint.
+- [x] Remove the visible desktop empty gap above the assessment console and raise the complete textbox toward the hero actions.
+- [x] Verify the tightened first-screen composition at desktop and mobile widths, then save the release checkpoint.
+- [x] Eliminate the large desktop gap between the hero action buttons and the assessment textbox so the full console fits in the initial laptop screen.
+- [x] Verify the complete raised console at the supplied laptop viewport and mobile width, then save the release checkpoint.
+- [x] Add a subtle hover shadow to the public-domain input container without reducing its text contrast.
+- [x] Add local real-time domain-format validation with an accessible invalid state and no network request.
+- [x] Add an inline Clear control that resets the typed domain and validation message.
+- [x] Add focused tests and verify default, invalid, valid, hover, and clear states at desktop and mobile widths before release.
+- [x] Remove the landing-page particle-animation control while preserving reduced-motion-safe decorative behavior.
+- [x] Rebalance the hero and assessment-console placement so the complete first-screen composition is compact at the user’s laptop viewport.
+- [x] Refine visible assessment loading feedback with clear live progress and status messaging while retaining explicit authorization gating.
+- [x] Add private recent-domain suggestions sourced only from the signed-in user’s own assessment history and never auto-start an assessment.
+- [x] Add a private CSV export alongside the existing PDF report download without publishing report data.
+- [x] Add focused tests and verify the updated loading, export, suggestion, and landing-layout states at desktop and mobile widths before release.
+- [x] Add intentional color accents to the saved-report icon rail without reducing navigation readability or theme support.
+- [x] Refine the saved-report action controls with clearer color hierarchy while retaining all private export and sharing actions.
+- [x] Compact the saved-report hero spacing without reducing score, domain, or assessment-time readability.
+- [x] Verify the updated report rail, action controls, and compact summary at desktop and mobile widths before release.
+- [x] Add clearly visible multi-tone color accents to the compact saved-report icon rail while preserving readable navigation states.
+- [x] Verify the strengthened icon-rail color treatment at desktop and mobile widths before release.
+- [x] Restore a balanced first-screen landing composition for the user’s normal 1918×1062 desktop scaling without losing responsive behavior.
+- [x] Restore appropriately sized dashboard and saved-report content for the normal desktop scale while preserving clear action controls.
+- [x] Verify landing, dashboard, and saved-report views at 1918×1062 plus compact mobile dimensions before release.
+- [x] Enlarge and rebalance the normal-scale desktop landing visual and assessment console to reduce the empty first-screen space.
+- [x] Bring the proof rail upward to create an intentional, filled first-screen transition at 1916×1061.
+- [x] Verify the corrected first-screen composition at 1916×1061 and mobile before release.
+- [x] Align the normal-scale desktop evidence card and assessment column to the same vertical midpoint without changing visual styling.
+- [x] Keep the complete two-column hero within the desktop viewport height and preserve the existing mobile stacking behavior.
+- [x] Verify equalized hero-column alignment at 1917×1065 and mobile before release.
+- [x] Center the complete two-column landing hero vertically within the available desktop viewport below the navbar without visual redesign.
+- [x] Preserve the existing mobile stacking layout and component dimensions while removing the large empty desktop band beneath the hero.
+- [x] Verify viewport-centered hero positioning at normal desktop and mobile dimensions before release.
+- [x] Lower the desktop assessment console enough to create clear separation below the hero action row without changing its styling or dimensions.
+- [x] Increase the desktop header brand, navigation, and theme-control prominence while retaining the existing content and color system.
+- [x] Verify the hero action-to-console gap and responsive header prominence at desktop and mobile dimensions before release.
+- [x] Lower the desktop assessment panel further to create clear separation from the hero actions.
+- [x] Increase the desktop assessment-panel footprint to use the remaining first-screen space without changing its content or colors.
+- [x] Verify the lowered enlarged panel at normal desktop and mobile dimensions before release.
+- [x] Cap the desktop evidence card within the viewport below the navbar and distribute its existing radar and caption vertically.
+- [x] Remove the excess top whitespace inside the desktop assessment panel so its review header begins near the panel top.
+- [x] Keep the complete two-column hero vertically centered and fully visible without desktop scrolling, while preserving mobile behavior.
+- [x] Verify the viewport-fit hero at normal desktop and mobile dimensions before release.
+- [x] Replace conflicting desktop hero sizing overrides with one navbar-safe, viewport-centered flex layout.
+- [x] Keep the desktop evidence card and right content stack at natural heights without stretching, clipping, or dead panel whitespace.
+- [x] Verify the root hero-layout correction at 1440px, 1280px, and compact mobile widths before release.
+- [x] Align the desktop evidence card and right-side landing content to the same top edge without changing component sizes or styling.
+- [x] Reduce the desktop hero’s upper whitespace so the aligned block starts closer to the navbar.
+- [x] Verify the top-aligned desktop hero and unchanged mobile layout before release.
+- [x] Stretch the desktop evidence card to match the full height of the headline, actions, and assessment panel stack while centering its radar.
+- [x] Vertically center the completed two-column hero block within the available desktop viewport.
+- [x] Verify the equal-height centered hero and unchanged mobile layout before release.
+- [x] Align the desktop evidence-card top edge exactly with the landing headline without changing component sizes or styles.
+- [x] Shift the completed desktop hero row upward slightly while preserving its equal-height relationship.
+- [x] Verify the final desktop placement and unchanged mobile layout before release.
+- [x] Lower and recenter the moving green radar sweep around the evidence-card shield without changing any other visual treatment.
+- [x] Verify the adjusted radar sweep at desktop and mobile sizes before release.
+- [x] Move the complete radar visual lower into the true middle of the Public Evidence Field card while preserving its caption and all other styling.
+- [x] Verify the complete radar visual is centered at desktop and mobile sizes before release.
+- [x] Offset saved-report top actions so they clear the compact desktop icon rail while preserving mobile behavior.
+- [x] Strengthen saved-report grade and category-delta visual hierarchy with restrained existing-brand accents.
+- [x] Replace the saved-report page background with a very light teal tint while retaining light card surfaces and existing typography.
+- [x] Verify the report refinements at desktop and mobile sizes before release.
+
+## Sidebar follow-up — confirmed pale desktop output
+
+- [x] Replace the ineffective sidebar cascade with direct rendered dark-green component styling while preserving the existing width and surrounding layout.
+- [x] Re-verify centered high-contrast icons, uniform gaps, active highlight, bottom avatar, and unchanged mobile behavior.
+- [x] Run `pnpm check && pnpm test`, review the final diff, and save a checkpoint only after the desktop rail is visibly dark green.
+
+## Sidebar follow-up — icon contrast regression
+
+- [x] Restore visible high-contrast icons in the saved-report desktop rail without changing width, spacing, active state, or report layout.
+- [x] Verify sidebar icon visibility at desktop and mobile sizes.
+- [x] Run `pnpm check && pnpm test`, review the final diff, and save a checkpoint after visual verification.
+
+## GitHub mirror and delivery follow-up
+
+- [x] Sync the latest local checkpoint to the private GitHub repository.
+- [x] Update and verify the GitHub Pages static mirror against the current public landing experience.
+- [x] Confirm the final GitHub commit and repository state.
+- [x] Package the complete project files into a ZIP for delivery.
